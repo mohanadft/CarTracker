@@ -1,0 +1,45 @@
+### create a new user
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "mashnsasdddsfth@gmail.com",
+  "password": "12345"
+}
+
+### create a new user
+
+GET http://localhost:3000/auth/whoami
+
+
+### create a new user
+
+POST http://localhost:3000/auth/signout
+
+
+###
+POST http://localhost:3000/reports/
+Content-Type: application/json
+
+{
+  "price": 3000,
+  "make": "MM",
+  "modal": "BMW",
+  "year": 2022,
+  "lng": 0,
+  "lat": 0,
+  "mileage": 2000
+}
+###
+PATCH http://localhost:3000/reports/7
+Content-Type: application/json
+
+{
+  "approved": true
+}
+
+
+###
+
+GET http://localhost:3000/reports?make=MM&modal="BMW"&year=2022&lng=0&lat=0&mileage=2000
